@@ -1,20 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#include <string.h>
-
- 
-
-#define  LENGTH 80
-
+/**
+ * main - printing without the usua;
+ *
+ *Return: Always 1
+ */
 int main(void)
-
 {
-	FILE *stream = stdout;
-	int i, ch;
-	char buffer[LENGTH + 1] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	for ( i = 0;
-	(i < strlen(buffer)) && ((ch = putc(buffer[i], stream)) !=     EOF);
-	 ++i);
-       	return 1;
-
+	write(STDOUT_FILENO, "and that piece of art is useful \" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
