@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *
- * _isalpha - Check Holberton
+ * _isalpha - prove lower and upper
  *
  * @c: An input character
  *
@@ -11,7 +10,6 @@
  * letter, lowercase or uppercase.
  *
  * Return:0 in otherwise.
- *
  */
 
 int _isalpha(int c)
