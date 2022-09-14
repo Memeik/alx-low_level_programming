@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ULONG_MAX 18446744073709551615
+#define ULONG_MAX 9223372036854775807
 
 /**
  * main - prints the fib
