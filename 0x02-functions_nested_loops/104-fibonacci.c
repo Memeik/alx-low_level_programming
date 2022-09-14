@@ -12,8 +12,8 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	n = 1;
-	while (n <= 98)
+
+	for (n = 0; n <= 98; n++)
 	{
 		if (n == 98)
 		{
@@ -26,7 +26,6 @@ int main(void)
 		result = a + b;
 		a = b;
 		b = result;
-		n++;
 	}
 	printf("\n");
 	return (0);
