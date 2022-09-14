@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (n == 98)
 		{
-			printf("%ld", a);
+			printf("%ld\n", a);
 		}
 		else
 		{
@@ -27,6 +27,6 @@ int main(void)
 		a = b;
 		b = result;
 	}
-	printf("\n");
+
 	return (0);
 }
