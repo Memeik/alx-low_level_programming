@@ -13,7 +13,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	for (n = 0; n <= 98; n++)
+	for (n = 1; n <= 98; n++)
 	{
 		if (n == 98)
 		{
