@@ -19,13 +19,13 @@ int main(void)
 			printf("%ld\n", a);
 		}
 		else
-		 {
+		{
 			 printf("%ld, ", a);
-		 }
+		}
 		 result = a + b;
 		 a = b;
-		 b = result;   
+		 b = result;
 	}
 
-	return 0;
+	return (0);
 }
