@@ -12,10 +12,10 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	n = 0;
-	while(n <= 98)
+	n = 1;
+	while (n <= 98)
 	{
-		if(n == 98)
+		if (n == 98)
 		{
 			printf("%ld\n", a);
 		}
