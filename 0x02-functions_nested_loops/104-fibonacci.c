@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int a, b, n, result;
+	long unsigned int a, b, n, result;
 
 	a = 1;
 	b = 2;
@@ -17,11 +17,11 @@ int main(void)
 	{
 		if (n == 98)
 		{
-			printf("%ld\n", a);
+			printf("%lu\n", a);
 		}
 		else
 		{
-			printf("%ld, ", a);
+			printf("%lu, ", a);
 		}
 		result = a + b;
 		a = b;
