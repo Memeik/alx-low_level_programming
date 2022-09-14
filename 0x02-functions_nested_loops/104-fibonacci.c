@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (n == 98)
 		{
-			printf("%ld\n", a);
+			printf("%ld", a);
 		}
 		else
 		{
