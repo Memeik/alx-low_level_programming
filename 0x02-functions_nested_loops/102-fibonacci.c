@@ -18,17 +18,14 @@ int main(void)
 		{
 			printf("%ld\n", a);
 		}
-		 else
+		else
 		 {
 			 printf("%ld, ", a);
 		 }
-
 		 result = a + b;
 		 a = b;
 		 b = result;   
 	}
 
 	return 0;
-}  
-
-
+}
