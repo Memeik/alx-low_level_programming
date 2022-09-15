@@ -4,7 +4,6 @@
  * print_numbers - function to print
  * Return: 0
  */
-
 void print_most_numbers(void)
 {
 	int c;
@@ -15,7 +14,10 @@ void print_most_numbers(void)
 		{
 			continue;
 		}
+		else
+		{
 		_putchar(c);
+		}
 	}
 	_putchar('\n');
 }
