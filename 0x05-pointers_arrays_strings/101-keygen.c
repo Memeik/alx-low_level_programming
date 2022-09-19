@@ -11,11 +11,9 @@
 
 int main(void)
 {
-	int N = 31
+	int N = 31;
 	int i = 0;
 	int randomizer = 0;
-
-	srand((unsigned int)(time(NULL)));
 
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
@@ -24,6 +22,8 @@ int main(void)
 	char password[N];
 
 	randomizer = rand() % 4;
+
+	srand((unsigned int)(time(NULL)));
 
 	for (i = 0; i < N; i++) 
 	{
