@@ -19,7 +19,7 @@ void rev_string(char *s)
 	while (s[len] != '\0')
 		len++;
 
-		middle = len/2;
+	middle = len/2;
 
 	for (int i = 0 ; i < middle; i++)
 	{
