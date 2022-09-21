@@ -1,12 +1,10 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * _strcmp - a function that compares two strings.
- *
  * @s1: an input string
- *
  * @s2: an input string
- *
  * Return: The sum of s1 + s2
  */
 
