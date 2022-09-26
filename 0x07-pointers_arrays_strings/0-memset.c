@@ -11,6 +11,7 @@
  *
  * Return: returns pointer to location filled
  */
+
 char *_memset(char *s, char b, unsigned int n);
 {
 	unsigned int j;
@@ -20,5 +21,5 @@ char *_memset(char *s, char b, unsigned int n);
 		s[j] = b;
 	}
 
-return (s);
+	return (s);
 }
