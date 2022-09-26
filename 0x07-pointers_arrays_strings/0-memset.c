@@ -11,14 +11,14 @@
  *
  * Return: returns pointer to location filled
  */
-
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n);
 {
-	while (n--)
+	int j;
+
+	for (j = 0 ; j < n ; j++)
 	{
-		*s = b;
-		s++;
+		s[j] = b;
 	}
 
-	return (s);
+return (s);
 }
