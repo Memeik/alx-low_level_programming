@@ -5,7 +5,7 @@
  * @s: assigned a pointer char var
  * @c: assigned char var
  * Return: c
- */
+ **/
 
 char *_strchr(char *s, char c);
 {
@@ -13,12 +13,12 @@ char *_strchr(char *s, char c);
 
 	while (s[i])
 	{
-		if (s[i] == c) 
+		if (s[i] == c)
 		{
 			return (s);
 			break;
 		}
-		i++
+		i++;
 	}
 	return 0;
 }
