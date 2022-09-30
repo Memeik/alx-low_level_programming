@@ -3,12 +3,10 @@
 #include <ctype.h>
 
 /**
- * main - A proogram that prints the minimum number of coins to
- * make change for an amount of money
+ * main - A proogram that prints the minimum number of coins change
  * @argc: The arguements' counter
  * @argv: The argument's values
  * Return: 1 if the number of arguments passed is not exactly
- * or 0 in otherwise
  */
 
 int main(int argc, char **argv)
