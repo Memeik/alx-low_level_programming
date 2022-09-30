@@ -18,8 +18,7 @@ int main(int argc, char **argv)
 		amount = atoi(argv[1]);
 		if (amount < 0)
 		{
-			printf("%d\n", 0);
-			return (0);
+			printf("0\n");
 		}
 		if (amount % 25 >= 0)
 					{
