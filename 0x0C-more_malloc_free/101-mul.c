@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	long long int num1, num2, result;
+	long int num1, num2, result;
 
 	if (argc != 3)
 	{
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		num1 = strtol(argv[1]);
 		num2 = strtol(argv[2]);
 		result = num1 * num2;
-		printf("%lld\n", result);
+		printf("%ld\n", result);
 		return (0);
 	}
 }
