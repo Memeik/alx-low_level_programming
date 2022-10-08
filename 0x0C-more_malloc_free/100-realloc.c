@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _realloc - A function that reall a mem blk using malloc 
+ * _realloc - A function that reall a mem blk using malloc
  * @ptr: pointer to the memory previously allocated
  * @old_size: old size in bytes of memory llocated space
  * @new_size: new size in bytes of memory to be allocated
