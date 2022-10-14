@@ -21,7 +21,6 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		return;
 	}
-
 	while (format[i])
 	{
 		switch (format[i])
