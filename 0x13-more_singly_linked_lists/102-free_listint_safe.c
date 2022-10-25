@@ -7,11 +7,11 @@
  * @h: A pointer listint_t structure
  * Return: The size of the list that was free'd
  */
-
 size_t free_listint_safe(listint_t **h)
 {
 	size_t counter = 0;
 	listint_t *temp;
+
 	temp = *h;
 
 	while (temp)
@@ -23,6 +23,7 @@ size_t free_listint_safe(listint_t **h)
 	}
 
 	*h = NULL;
+
 	return (counter);
 }
 
@@ -43,6 +44,5 @@ void free_list(listint_t *head)
 		free(temp);
 		free_list(temp);
 	}
-
 	free(head);
 }
