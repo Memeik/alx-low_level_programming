@@ -1,29 +1,15 @@
 #include "main.h"
-
 /**
- * _isalpha - prove lower and upper
- *
- * @c: An input character
- *
- * Description: function returns 1 if the character is a
- *
- * letter, lowercase or uppercase.
- *
- * Return:0 in otherwise.
+ * _isalpha - Check if character is a alphabet character.
+ * @c: type int character
+ * Return: 1 if letter, lowercase or uppercase, and 0 otherwise
  */
 
 int _isalpha(int c)
 {
-	char lower, upper;
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
 
-	for (lower = 'a'; lower <= 'z'; lower++)
-	{
-		for (upper = 'A'; upper <= 'Z'; upper++)
-		{
-			if (c == lower || c == upper)
-				return (1);
-		}
-	}
-
-	return (0);
+	else
+		return (0);
 }

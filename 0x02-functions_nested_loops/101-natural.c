@@ -1,25 +1,20 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Prints the sum of all multiples of 3 or 5 up to 1024
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
  *
- * Return: Always (Success)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int i, z = 0;
+	int a, b;
 
-	while (i < 1024)
+	for (a = 1; a < 1024; a++)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
-		{
-			z += i;
-		}
-		i++;
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	printf("%d\n", z);
-
+	printf("%d\n", b);
 	return (0);
 }

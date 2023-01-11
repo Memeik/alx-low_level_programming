@@ -1,31 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 /**
- * main - A program that adds positive numbers
- * @argc: The arguments' counter
- * @argv: The argument's values
- * Return: Always 0 (Success)
- */
+ * main - adds positive numbers.
+ * @argc: arugement counter.
+ * @argv: arguement vector.
+ * Return: 0 - success.
+*/
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int num, result = 0, i;
+	int i, j, sum = 0;
 
-	while (argc-- > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 0; argv[argc][i]; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!(isdigit(argv[argc][i])))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		num = atoi(argv[argc]);
-		result += num;
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }

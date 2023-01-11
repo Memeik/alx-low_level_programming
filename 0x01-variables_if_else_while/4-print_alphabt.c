@@ -1,26 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints the stdout
+ * Return: 0 if successful
  */
-
 int main(void)
 {
-	char low, e, q;
+	char lowerCase, not, nott;
 
-	e = 'e';
-	q = 'q';
+	not = 'e';
+	nott = 'q';
 
-	for (low = 'a'; low <= 'z'; low++)
+	for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
 	{
-		if (low != e && low != q)
-			putchar(low);
+	if (lowerCase != not && lowerCase != nott)
+	putchar(lowerCase);
 	}
 	putchar('\n');
-
 	return (0);
 }

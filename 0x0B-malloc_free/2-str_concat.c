@@ -1,51 +1,49 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * str_concat - Concatenates two strings of any size
- * @s1: the first string to concatenate
- * @s2: the second string to concatenate
- * Return: the two strings concatenated
+ * *str_concat - function that concatenates two strings
+ * @s1: pointer char variable
+ * @s2: pointer char variable
+ * Return: NULL
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0, l = 0;
-	char *s;
+	int a, b, c, d, total;
+	int count1 = 0;
+	int count2 = 0;
+	char *ptr;
 
 	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
-	while (s1[i])
-		i++;
-
-	while (s2[j])
-		j++;
-
-	l = i + j;
-	s = malloc((sizeof(char) * l) + 1);
-
-	if (s == NULL)
-		return (NULL);
-
-	j = 0;
-
-	while (k < l)
 	{
-		if (k <= i)
-			s[k] = s1[k];
-		if (k >= i)
-		{
-			s[k] = s2[j];
-			j++;
-		}
-		k++;
+		s1 = "";
 	}
-
-	s[k] = '\0';
-	return (s);
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+		count1 = count1 + 1;
+	}
+	for (b = 0; s2[b] != '\0'; b++)
+	{
+		count2 = count2 + 1;
+	}
+	total = count1 + count2;
+	ptr = malloc(total + 1 * sizeof(char));
+	if (ptr == NULL)
+	{
+	return (NULL);
+	}
+	for (c = 0; s1[c] != '\0'; c++)
+	{
+		ptr[c] = s1[c];
+	}
+	for (c = c, d = 0; s2[d] != '\0'; c++, d++)
+	{
+		ptr[c] = s2[d];
+	}
+	ptr[c] = '\0';
+	return (ptr);
 }
